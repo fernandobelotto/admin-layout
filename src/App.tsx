@@ -1,7 +1,9 @@
+import DashboardLayout from "./layout";
+
 function App() {
   return (
     <>
-      <h1 className="text-4xl text-white">TailwindCSS template</h1>
+      <DashboardLayout />
     </>
   );
 }
