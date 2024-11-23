@@ -4,7 +4,7 @@ const DashboardLayout = () => {
   return (
     <div className="h-screen w-full bg-gray-100">
       {/* Sidebar */}
-      <div className="fixed left-0 top-0 h-full w-64 bg-gray-900 text-white p-4">
+      <aside className="fixed left-0 top-0 h-full w-64 bg-gray-900 text-white p-4">
         <div className="flex items-center gap-2 mb-8">
           <span className="text-xl font-bold">Admin Panel</span>
         </div>
@@ -32,12 +32,12 @@ const DashboardLayout = () => {
             Settings
           </a>
         </nav>
-      </div>
+      </aside>
 
       {/* Main Content */}
       <div className="ml-64 min-h-screen">
         {/* Header */}
-        <div className="h-16 bg-white border-b flex items-center justify-between px-6 fixed top-0 right-0 left-64">
+        <header className="h-16 bg-white border-b flex items-center justify-between px-6 fixed top-0 right-0 left-64">
           <div className="flex items-center gap-4">
             <button className="p-2 hover:bg-gray-100 rounded-lg">
               <Menu className="h-5 w-5" />
@@ -58,16 +58,16 @@ const DashboardLayout = () => {
             </button>
             <div className="h-8 w-8 bg-gray-200 rounded-full"></div>
           </div>
-        </div>
+        </header>
 
         {/* Main Content Area */}
-        <div className="pt-16 p-6 overflow-auto">
+        <main className="pt-16 p-6 overflow-auto">
           {/* Content goes here */}
           <div className="bg-white rounded-lg p-6 shadow-sm">
             <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
             <p className="text-gray-600">Welcome to your admin dashboard!</p>
           </div>
-        </div>
+        </main>
       </div>
     </div>
   );
